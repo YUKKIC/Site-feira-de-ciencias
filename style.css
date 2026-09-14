@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{--green:#173b2c;--green2:#2f6b4f;--cream:#f5f1e8;--paper:#fffdf8;--ink:#18231e;--muted:#64716a;--line:#dce1da}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+.hero{min-height:680px;background:linear-gradient(135deg,#112f24,#24563e);color:white;padding:0 7vw;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-140px;bottom:-250px;box-shadow:0 0 0 80px rgba(255,255,255,.025),0 0 0 160px rgba(255,255,255,.02)}
+nav{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.16);position:relative;z-index:2}.logo{font-weight:700;letter-spacing:.3px}.nav-links{display:flex;gap:28px}.nav-links a{color:#e7efe9;text-decoration:none;font-size:14px}.nav-links a:hover{text-decoration:underline}
+.hero-content{max-width:850px;padding:105px 0 100px;position:relative;z-index:1}.tag,.eyebrow{font-size:12px;font-weight:700;letter-spacing:2px}.tag{display:inline-block;border:1px solid rgba(255,255,255,.4);padding:8px 12px;border-radius:30px}.hero h1{font:700 clamp(54px,8vw,100px)/.98 "Playfair Display",serif;margin:24px 0}.hero h1 span{font-style:italic;color:#d5e8d9}.hero p{font-size:20px;max-width:650px;color:#dce9e0}.button{display:inline-block;margin-top:25px;padding:13px 20px;background:white;color:var(--green);border-radius:8px;text-decoration:none;font-weight:700}
+.section{padding:100px 7vw;max-width:1250px;margin:auto}.eyebrow{color:var(--green2)}h2{font:700 clamp(36px,5vw,62px)/1.05 "Playfair Display",serif;margin:15px 0 25px;max-width:850px}h3{line-height:1.2}p{color:var(--muted)}.lead{font-size:19px;max-width:750px}.intro{display:grid;grid-template-columns:1fr 1.1fr;gap:70px}.intro .text{font-size:18px}
+.split-section{display:grid;grid-template-columns:1fr 1fr}.card{padding:70px 7vw;min-height:300px}.card span{font-size:12px;font-weight:700;letter-spacing:2px}.card h3{font:700 32px "Playfair Display",serif}.card.dark{background:var(--green);color:white}.card.dark p{color:#cbdacf}.card.light{background:var(--cream)}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:45px}.grid-4 article,.impact-grid article{padding:28px;border:1px solid var(--line);border-radius:14px;background:#fff}.icon{font-size:30px}.grid-4 h3{font-size:20px}
+.mip{background:var(--cream);max-width:none;display:grid;grid-template-columns:1fr 1fr;gap:80px}.steps{display:grid;gap:16px}.steps>div{display:flex;gap:18px;align-items:flex-start;background:white;padding:20px;border-radius:12px}.steps b{background:var(--green);color:white;border-radius:50%;min-width:34px;height:34px;display:grid;place-items:center}.steps strong{color:var(--green)}
+.law{background:#edf3ed;max-width:none}.law-box{max-width:1050px;margin-top:40px;display:grid;grid-template-columns:270px 1fr;gap:45px;align-items:center;background:white;border-radius:18px;padding:45px}.law-number{font:700 60px "Playfair Display",serif;color:var(--green)}.law-number span{font-size:26px}.warning{padding:15px;background:#f6f0df;border-left:4px solid #c19b48;color:#6b5b36!important}
+.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px}.impact-grid h3{font-size:23px;color:var(--green)}
+.climate-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.climate-stats div{background:var(--cream);border:1px solid var(--line);padding:26px;border-radius:14px}.climate-stats strong{display:block;font:700 40px "Playfair Display",serif;color:var(--green)}.climate-stats span{color:var(--muted);font-size:14px}
+.labor{background:var(--green);max-width:none;color:white}.labor h2{color:white}.labor .eyebrow{color:#bcd8c5}.labor .lead,.labor .small-note{color:#cbdacf}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:45px 0}.stats div{border:1px solid rgba(255,255,255,.2);padding:30px;border-radius:14px}.stats strong{display:block;font:700 52px "Playfair Display",serif}.stats span{color:#d3e2d8}
+.technology{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:80px}.tech-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}.tech-list span{padding:14px;border:1px solid var(--line);border-radius:10px}.tech-visual{height:360px;display:grid;place-items:center;position:relative}.circle{width:150px;height:150px;border-radius:50%;background:var(--green);color:white;display:grid;place-items:center;font-size:42px;font-weight:700;position:relative;z-index:2}.orbit{position:absolute;border:1px solid #b8c9bd;border-radius:50%}.o1{width:250px;height:250px}.o2{width:340px;height:340px}
+.conclusion{text-align:center}.conclusion h2,.conclusion>p{margin-left:auto;margin-right:auto}.conclusion>p{max-width:800px}.formula{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;align-items:center;margin:45px 0;font-weight:700}.formula span{padding:13px 18px;background:var(--cream);border-radius:30px}.formula b{color:var(--green2)}.question{font:italic 24px "Playfair Display",serif!important;color:var(--green)!important}
+footer{padding:30px 7vw;background:#0e251b;color:#dbe8df;display:flex;justify-content:space-between;font-size:14px}footer span{color:#aabbb0}
+@media(max-width:800px){.nav-links{display:none}.hero{min-height:600px}.hero-content{padding-top:80px}.section{padding:70px 6vw}.intro,.mip,.technology,.law-box{grid-template-columns:1fr}.split-section,.grid-4,.stats,.impact-grid,.climate-stats{grid-template-columns:1fr}.law-box{padding:30px}.law-number{font-size:48px}.tech-list{grid-template-columns:1fr}.tech-visual{height:300px}footer{flex-direction:column;gap:8px}}
+
+
+/* ===== AJUSTES MOBILE ===== */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: auto;
+    padding: 0 20px;
+  }
+
+  nav {
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content {
+    padding: 72px 0 80px;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 7px 10px;
+  }
+
+  .hero h1 {
+    font-size: clamp(45px, 15vw, 70px);
+    line-height: .95;
+    margin: 20px 0;
+  }
+
+  .hero p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+    padding: 14px 16px;
+    margin-top: 20px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.6px;
+  }
+
+  h2 {
+    font-size: clamp(34px, 10vw, 48px);
+    line-height: 1.05;
+    margin-top: 12px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .intro {
+    gap: 20px;
+  }
+
+  .intro .text {
+    font-size: 16px;
+  }
+
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 45px 20px;
+  }
+
+  .card h3 {
+    font-size: 28px;
+  }
+
+  .grid-4,
+  .impact-grid,
+  .stats,
+  .climate-stats {
+    gap: 12px;
+  }
+
+  .grid-4 article,
+  .impact-grid article {
+    padding: 22px;
+  }
+
+  .climate-stats div {
+    padding: 20px;
+  }
+
+  .climate-stats strong {
+    font-size: 32px;
+  }
+
+  .mip {
+    gap: 35px;
+  }
+
+  .steps {
+    gap: 12px;
+  }
+
+  .steps > div {
+    padding: 17px;
+    gap: 13px;
+  }
+
+  .steps span {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .law-box {
+    padding: 25px 20px;
+    gap: 20px;
+    border-radius: 14px;
+  }
+
+  .law-number {
+    font-size: 43px;
+  }
+
+  .law-number span {
+    font-size: 21px;
+  }
+
+  .warning {
+    font-size: 14px;
+  }
+
+  .labor {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .stats div {
+    padding: 22px;
+  }
+
+  .stats strong {
+    font-size: 45px;
+  }
+
+  .stats span {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .technology {
+    gap: 30px;
+  }
+
+  .tech-list {
+    gap: 9px;
+  }
+
+  .tech-list span {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .tech-visual {
+    height: 260px;
+    transform: scale(.82);
+    margin: -15px auto;
+  }
+
+  .formula {
+    gap: 8px;
+    margin: 32px 0;
+  }
+
+  .formula span {
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+
+  .formula b {
+    font-size: 14px;
+  }
+
+  .question {
+    font-size: 20px !important;
+    line-height: 1.45;
+  }
+
+  footer {
+    padding: 25px 20px;
+    gap: 6px;
+    font-size: 13px;
+  }
+}
+
+/* Celulares bem estreitos */
+@media (max-width: 380px) {
+  .hero-content {
+    padding-top: 55px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .section {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .card {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .tech-visual {
+    transform: scale(.7);
+  }
+}
